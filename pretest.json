@@ -1,0 +1,116 @@
+  {
+	  "version": 2.0,
+  "questions": [
+      {
+    "question": "1. What two quantities are plotted against each other on a MOSFET's forward transfer characteristic curve?",
+    "answers": {
+      "a": "Drain Current and Drain-Source Voltage",
+      "b": "Drain Current and Gate-Source Voltage",
+      "c": "Gate Current and Gate-Source Voltage",
+      "d": "Drain Current and Substrate Voltage"
+    },
+    "correctAnswer": "b",
+    "difficulty": "beginner"
+  },
+  {
+    "question": "2. What fundamental parameter is extracted by finding the 'turn-on' point (or intercept) on the gate-source voltage axis of the transfer curve?",
+    "answers": {
+      "a": "`KP` (Transconductance Parameter)",
+      "b": "`VTO` (Zero-Bias Threshold Voltage)",
+      "c": "`GAMMA` (Body Effect Parameter)",
+      "d": "`LAMBDA` (Channel-Length Modulation)"
+    },
+    "correctAnswer": "b",
+    "difficulty": "beginner"
+  },
+  {
+    "question": "3. The *slope* of the drain current versus gate-source voltage curve (in the appropriate region) is primarily used to determine which SPICE parameter?",
+    "answers": {
+      "a": "`VTO` (Threshold Voltage)",
+      "b": "`TOX` (Oxide Thickness)",
+      "c": "`KP` (Transconductance Parameter)",
+      "d": "`GAMMA` (Body Effect)"
+    },
+    "correctAnswer": "c",
+    "difficulty": "intermediate"
+  },
+  {
+    "question": "4. How is the Body Effect parameter (`GAMMA`) extracted using transfer characteristics?",
+    "answers": {
+      "a": "By finding the slope of a single curve in the subthreshold region.",
+      "b": "By measuring the change in threshold voltage from multiple curves at different drain voltages.",
+      "c": "By measuring the change in threshold voltage from multiple curves at different substrate voltages.",
+      "d": "By measuring the current at zero gate voltage."
+    },
+    "correctAnswer": "c",
+    "difficulty": "intermediate"
+  },
+  {
+    "question": "5. When the drain current is plotted on a *logarithmic* scale against the gate voltage, what characteristic is measured *below* the threshold voltage?",
+    "answers": {
+      "a": "The Early Voltage",
+      "b": "The Subthreshold Swing (or slope)",
+      "c": "The Breakdown Voltage",
+      "d": "The 'On' Resistance"
+    },
+    "correctAnswer": "b",
+    "difficulty": "intermediate"
+  },
+  {
+    "question": "6. The Subthreshold Swing (extracted from the log-linear transfer plot) provides information to help model which physical phenomena?",
+    "answers": {
+      "a": "Hot carrier injection and mobility degradation.",
+      "b": "Channel length modulation and output resistance.",
+      "c": "Carrier mobility and parasitic resistance.",
+      "d": "Interface trap density and substrate doping effects."
+    },
+    "correctAnswer": "d",
+    "difficulty": "advanced"
+  },
+  {
+    "question": "7. In more advanced models (like LEVEL 2 or 3), what parameter models the *reduction* in the curve's slope at high gate voltages due to carrier velocity saturation or mobility degradation?",
+    "answers": {
+      "a": "`VTO` (Threshold Voltage)",
+      "b": "`GAMMA` (Body Effect)",
+      "c": "`NSUB` (Substrate Doping)",
+      "d": "`THETA` or `UCRIT` (Mobility Degradation parameters)"
+    },
+    "correctAnswer": "d",
+    "difficulty": "advanced"
+  },
+  {
+    "question": "8. To accurately extract the threshold voltage, the transfer characteristic is typically measured under what drain voltage condition?",
+    "answers": {
+      "a": "A drain voltage swept from zero to the supply voltage.",
+      "b": "A very large drain voltage in the breakdown region.",
+      "c": "A small, constant drain voltage (in the linear region).",
+      "d": "A drain voltage of exactly zero."
+    },
+    "correctAnswer": "c",
+    "difficulty": "beginner"
+  },
+  {
+    "question": "9. What is a primary limitation of the LEVEL 1 model that a LEVEL 3 model addresses using parameters (like `THETA`) extracted from the transfer curve?",
+    "answers": {
+      "a": "It ignores the existence of a threshold voltage.",
+      "b": "It assumes carrier mobility is constant, while LEVEL 3 models its degradation with gate voltage.",
+      "c": "It cannot be used for P-channel MOSFETs.",
+      "d": "It fails to model the drain current at all."
+    },
+    "correctAnswer": "b",
+    "difficulty": "intermediate"
+  },
+  {
+    "question": "10. The transconductance parameter (`KP`) is a composite parameter. Which of these physical parameters, often extracted separately, is a direct component of `KP`?",
+    "answers": {
+      "a": "`VTO` (Threshold Voltage)",
+      "b": "`UO` (Surface Mobility)",
+      "c": "`GAMMA` (Body Effect)",
+      "d": "`LAMBDA` (Channel-Length Modulation)"
+    },
+    "correctAnswer": "b",
+    "difficulty": "advanced"
+  }
+
+  ]
+}
